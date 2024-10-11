@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title></title>
+        <link type="text/css" rel="stylesheet" href="./css/style.css">
+        <title>e-mail to find</title>
+    </head>
+    <body>
+
+
+        <div id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis perspiciatis tenetur temporibus eveniet amet totam corporis maiores voluptatibus provident ipsam itaque eum eaque, placeat hic reiciendis! Qui esse voluptatum repellendus quo consectetur sit, libero totam reiciendis voluptatem ex assumenda quasi excepturi sint atque velit error laudantium eaque adipisci, ipsa inventore. Cumque nostrum provident autem doloribus sequi, quia doloremque molestiae. Possimus pariatur praesentium neque eveniet impedit quia ducimus laudantium optio suscipit laboriosam, obcaecati reprehenderit qui non, cumque facere? Sequi corporis eos reprehenderit neque hic nisi quam, et nihil. Earum, totam eveniet excepturi praesentium illo ipsa culpa deleniti accusamus vitae velit dolores labore. Exercitationem, voluptates. Accusantium, recusandae? Quis nesciunt soluta quasi saepe in laboriosam info@emreerol.com quas, esse quam ratione repellat officia veniam fuga voluptate? Ipsum modi quas iste atque corrupti, deleniti debitis voluptas quae laudantium eligendi excepturi provident ipsam voluptatibus eum est, nisi quisquam, sit nobis illum expedita explicabo! Quis rerum soluta velit, aspernatur sunt sit. Corporis, omnis! Repellendus perferendis provident sapiente nemo porro consequuntur ea! Nemo ipsam adipisci magnam! Ducimus repellendus, itaque sapiente voluptate perspiciatis reprehenderit incidunt fugiat totam obcaecati aut saepe repudiandae facilis fuga veniam molestias quam. Earum, nihil iusto ipsam autem optio facilis quas veniam similique minima culpa corporis consectetur voluptatum mollitia explicabo assumenda! Animi excepturi eius possimus ratione explicabo odio numquam, inventore doloremque sit minus, illo, enim repudiandae sunt? Quia vel qui commodi ullam. Ad enim nemo obcaecati quasi officiis, hic sed debitis placeat vitae reiciendis? Laudantium consectetur, voluptatibus voluptate aut corrupti quas eveniet vero provident eligendi quod debitis beatae. Mollitia, voluptatibus amet, veritatis unde ea possimus reiciendis deserunt illo natus totam aspernatur? Eius modi nam minus eaque doloremque fuga, aliquam suscipit perferendis, dignissimos atque, vel incidunt quasi. Veniam doloremque, error, distinctio natus ducimus quibusdam magnam tempore veritatis debitis in recusandae iure repudiandae ut sequi aliquid perspiciatis quos!
+            <br><br>
+            <button onclick="find()">Gmaili Göster</button><br><br><br>
+            <div id="conclusion" style="background-color: #fff; display:inline-block;"></div>
+        </div>
+  
+        
+        <script type="text/javascript" language="javascript">
+
+            var value = document.getElementById("text").innerHTML;
+            var pattern = /[A-Z0-9a-z_.-]+@[A-Z0-9a-z\-]+\.[A-Za-z]{2,3}/gi;
+            var conclusion = value.match(pattern);
+            function find(){
+            document.getElementById("conclusion").innerHTML = conclusion;
+        }
+        </script>
+
+    </body>
+
+</html>
